@@ -1,10 +1,11 @@
+- 👋 Olá, eu sou o @leandrofeder.
+- 👀 Tenho interesse em migrar para a área de TI.
+- 🌱 Atualmente, estou aprendendo a linguagem de programação Python.
+- 💞️ Procuro aprender ainda mais como programador e poder contribuir com meus conhecimentos em futuras contratações na área.
+- 📫 Como me encontrar. E-mail: leandrofeder@outlook.com ou Linkedin: https://www.linkedin.com/in/leandrofeder/
+----------------------------------------------------------------------------------------------------------------------------------------- 
 - 👋 Hi, I’m @leandrofeder.
 - 👀 I’m interested in migrate to the IT area.
 - 🌱 I’m currently learning Python programming language.
-- 💞️ I’m looking to collaborate on my growth as a programmer and being able to contribute my knowledge in a future hiring in the area.
+- 💞️ I'm looking to learn even more as a programmer and be able to contribute my knowledge in future hiring in the area.
 - 📫 How to reach me. E-mail: leandrofeder@outlook.com or Linkedin: https://www.linkedin.com/in/leandrofeder/
-
-<!---
-leandrofeder/leandrofeder is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
