@@ -1,5 +1,5 @@
 <h1 align="center">👋 Olá, eu me chamo Leandro Feder</h1>
-<h3 align="center">Um programador Python iniciante</h3>
+<h3 align="center">Um programador iniciante</h3>
 
 - 🔭 Bot Builder na D1 Smarkio.
 
