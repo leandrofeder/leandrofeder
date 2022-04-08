@@ -1,11 +1,11 @@
 <h1 align="center">👋 Olá, eu me chamo Leandro Feder</h1>
 <h3 align="center">Um programador Python iniciante</h3>
 
-- 🔭 Eu procuro meu **primeiro trabalho** na área de programação.
+- 🔭 Bot Builder na D1 Smarkio.
 
-- 🌱 Atualmente, estou aprendendo a linguagem de programação **Python**.
+- 🌱 Atualmente, estou aprendendo a linguagem de programação **JavaScript**.
 
-- 👨‍💻 Eu procuro aplicar meus conhecimentos e **aprender ainda mais**.
+- 👨‍💻 Procuro estudar e **aprender ainda mais**.
 
 - 👀 Conhecimentos em **Pyhton, Excel, Photoshop**.
 
