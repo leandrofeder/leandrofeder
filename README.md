@@ -7,7 +7,7 @@
 
 - 👨‍💻 Procuro estudar e **aprender ainda mais**.
 
-- 👀 Conhecimentos em **JavaScript, Node.JS, Excel, Photoshop, **.
+- 📚 Conhecimentos em **JavaScript, Node.JS, Excel, Photoshop, **.
 
 <h3 align="left">Como me encontrar:</h3>
 <p align="left">
