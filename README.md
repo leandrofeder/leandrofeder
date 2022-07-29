@@ -5,7 +5,7 @@
 
 - 🌱 Atualmente, estou aprendendo a linguagem de programação **JavaScript**.
 
-- 👨‍💻 Procuro estudar e **aprender ainda mais**.
+- 👨‍💻 Em busca constante por conhecimento e **aprendendo sempre mais**.
 
 - 📚 Conhecimentos em **JavaScript, Node.JS, Excel, Photoshop, **.
 
