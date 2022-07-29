@@ -1,13 +1,13 @@
 <h1 align="center">👋 Olá, eu me chamo Leandro Feder</h1>
-<h3 align="center">Um programador iniciante</h3>
+<h3 align="center">Desenvolvedor de ChatBot</h3>
 
-- 🔭 Bot Builder na D1 Smarkio.
+- 🔭 Bot Builder na D1 Smarkio - A ZENVIA company.
 
 - 🌱 Atualmente, estou aprendendo a linguagem de programação **JavaScript**.
 
 - 👨‍💻 Procuro estudar e **aprender ainda mais**.
 
-- 👀 Conhecimentos em **Pyhton, Excel, Photoshop**.
+- 👀 Conhecimentos em **JavaScript, Node.JS, Excel, Photoshop, **.
 
 - 📫 Como me encontrar: **leandrofeder@outlook.com** ou https://wa.me/5547991130188 (Whatsapp)
 
