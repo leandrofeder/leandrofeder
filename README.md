@@ -1,5 +1,4 @@
 <h1 align="center">👋 Olá, eu me chamo Leandro Feder</h1>
-<h3 align="center">Desenvolvedor de ChatBot</h3>
 
 - 🔭 Desenvolvedor de operações na Zenvia.
 
