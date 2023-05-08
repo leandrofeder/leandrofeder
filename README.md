@@ -1,9 +1,7 @@
 <h1 align="center">👋 Olá, eu me chamo Leandro Feder</h1>
 <h3 align="center">Desenvolvedor de ChatBot</h3>
 
-- 🔭 Bot Builder na D1 Smarkio - A ZENVIA company.
-
-- 🌱 Atualmente, estou aprendendo a linguagem de programação **JavaScript**.
+- 🔭 Desenvolvedor de operações na Zenvia.
 
 - 👨‍💻 Em busca constante por conhecimento e **aprendendo sempre mais**.
 
