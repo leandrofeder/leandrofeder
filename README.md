@@ -7,7 +7,7 @@
 
 - 👨‍💻 Em busca constante por conhecimento e **aprendendo sempre mais**.
 
-- 📚 Conhecimentos em **JavaScript, Node.JS, Excel, Photoshop, **.
+- 📚 Conhecimentos em **JavaScript, Node.js, Jest.js, REST API**.
 
 <h3 align="left">Como me encontrar:</h3>
 <p align="left">
