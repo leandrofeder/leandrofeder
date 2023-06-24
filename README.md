@@ -1,6 +1,6 @@
 <h1 align="center">👋 Olá, eu me chamo Leandro Feder</h1>
 
-- 🔭 Sou Programador de Software Sênior na WEG.
+- 🔭 Sou Programador de Software na WEG.
 
 - 👨‍💻 Em busca constante por conhecimento e **aprendendo sempre mais**.
 
