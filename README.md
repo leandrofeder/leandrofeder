@@ -1,6 +1,6 @@
 <h1 align="center">👋 Olá, eu me chamo Leandro Feder</h1>
 
-- 🔭 Sou desenvolvedor de operações na Zenvia.
+- 🔭 Sou Programador de Software Sênior na WEG.
 
 - 👨‍💻 Em busca constante por conhecimento e **aprendendo sempre mais**.
 
