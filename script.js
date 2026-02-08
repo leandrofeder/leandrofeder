@@ -251,6 +251,57 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     smoothScroll();
+
+    // Scroll reveal animation
+    document.querySelectorAll('.experience-card, .skill-category, .stat-card').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'all 0.6s ease';
+        observer.observe(el);
+    });
+
+    // Mobile Menu Toggle
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+    const closeMenuBtn = document.getElementById('close-menu');
+    const mobileMenuLinks = document.querySelectorAll('.mobile-menu-links a');
+
+    if (hamburgerMenu && mobileMenu && mobileMenuOverlay && closeMenuBtn) {
+        // Open menu
+        hamburgerMenu.addEventListener('click', function() {
+            hamburgerMenu.classList.add('active');
+            mobileMenu.classList.add('active');
+            mobileMenuOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        // Close menu function
+        function closeMenu() {
+            hamburgerMenu.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            mobileMenuOverlay.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close menu button
+        closeMenuBtn.addEventListener('click', closeMenu);
+
+        // Close menu on overlay click
+        mobileMenuOverlay.addEventListener('click', closeMenu);
+
+        // Close menu when a link is clicked
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+
+        // Close menu on resize if window gets bigger
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                closeMenu();
+            }
+        });
+    }
 });
 
 // Smooth scroll for anchor links
@@ -288,15 +339,6 @@ const observer = new IntersectionObserver(function(entries) {
     });
 }, observerOptions);
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.experience-card, .skill-category, .stat-card').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'all 0.6s ease';
-        observer.observe(el);
-    });
-});
-
 // Navbar scroll effect
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
@@ -306,42 +348,3 @@ window.addEventListener('scroll', function() {
         navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
     }
 });
-
-// Mobile Menu Toggle
-const hamburgerMenu = document.getElementById('hamburger-menu');
-const mobileMenu = document.getElementById('mobile-menu');
-const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
-const closeMenuBtn = document.getElementById('close-menu');
-const mobileMenuLinks = document.querySelectorAll('.mobile-menu-links a');
-
-// Open menu
-hamburgerMenu.addEventListener('click', function() {
-    hamburgerMenu.classList.add('active');
-    mobileMenu.classList.add('active');
-    mobileMenuOverlay.classList.add('active');
-    document.body.style.overflow = 'hidden';
-});
-
-// Close menu function
-function closeMenu() {
-    hamburgerMenu.classList.remove('active');
-    mobileMenu.classList.remove('active');
-    mobileMenuOverlay.classList.remove('active');
-    document.body.style.overflow = 'auto';
-}
-
-// Close menu button
-closeMenuBtn.addEventListener('click', closeMenu);
-
-// Close menu on overlay click
-mobileMenuOverlay.addEventListener('click', closeMenu);
-
-// Close menu when a link is clicked
-mobileMenuLinks.forEach(link => {
-    link.addEventListener('click', closeMenu);
-});
-
-// Close menu on resize if window gets bigger
-window.addEventListener('resize', function() {
-    if (window.innerWidth > 768) {
-        closeMenu();
