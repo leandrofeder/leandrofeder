@@ -212,6 +212,7 @@ function toggleTheme() {
 function setLanguage(lang) {
     currentLanguage = lang;
     localStorage.setItem('language', lang);
+    document.documentElement.setAttribute('data-language', lang);
 
     // Update active button
     document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -255,17 +256,17 @@ function calculateExperienceDuration(startDateStr, endDateStr) {
         months += 12;
     }
     
-    const currentLang = document.documentElement.getAttribute('data-language') || 'pt';
+    const lang = currentLanguage || 'pt';
     const formatDuration = (y, m) => {
-        if (currentLang === 'pt') {
+        if (lang === 'pt') {
             if (y === 0) return m === 1 ? `${m} mês` : `${m} meses`;
             if (m === 0) return y === 1 ? `${y} ano` : `${y} anos`;
             return `${y} ${y === 1 ? 'ano' : 'anos'} ${m} ${m === 1 ? 'mês' : 'meses'}`;
-        } else if (currentLang === 'en') {
+        } else if (lang === 'en') {
             if (y === 0) return m === 1 ? `${m} month` : `${m} months`;
             if (m === 0) return y === 1 ? `${y} year` : `${y} years`;
             return `${y} ${y === 1 ? 'year' : 'years'} ${m} ${m === 1 ? 'month' : 'months'}`;
-        } else if (currentLang === 'es') {
+        } else if (lang === 'es') {
             if (y === 0) return m === 1 ? `${m} mes` : `${m} meses`;
             if (m === 0) return y === 1 ? `${y} año` : `${y} años`;
             return `${y} ${y === 1 ? 'año' : 'años'} ${m} ${m === 1 ? 'mes' : 'meses'}`;
@@ -282,8 +283,16 @@ function updateExperiencePeriods() {
         const startDate = element.getAttribute('data-start');
         const endDate = element.getAttribute('data-end');
         const duration = calculateExperienceDuration(startDate, endDate);
-        const startMonth = new Date(startDate + '-01').toLocaleDateString(document.documentElement.getAttribute('data-language') || 'pt-BR', { month: 'short', year: 'numeric' });
-        const endMonth = endDate === 'present' ? (document.documentElement.getAttribute('data-language') === 'en' ? 'Present' : document.documentElement.getAttribute('data-language') === 'es' ? 'Presente' : 'Presente') : new Date(endDate + '-01').toLocaleDateString(document.documentElement.getAttribute('data-language') || 'pt-BR', { month: 'short', year: 'numeric' });
+        const lang = currentLanguage || 'pt';
+        const locale = lang === 'pt' ? 'pt-BR' : lang === 'en' ? 'en-US' : 'es-ES';
+        
+        const startMonth = new Date(startDate + '-01').toLocaleDateString(locale, { month: 'short', year: 'numeric' });
+        let endMonth;
+        if (endDate === 'present') {
+            endMonth = lang === 'en' ? 'Present' : lang === 'es' ? 'Presente' : 'Presente';
+        } else {
+            endMonth = new Date(endDate + '-01').toLocaleDateString(locale, { month: 'short', year: 'numeric' });
+        }
         
         element.textContent = `${startMonth} - ${endMonth} • ${duration}`;
     });
