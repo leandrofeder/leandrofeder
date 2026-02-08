@@ -6,7 +6,7 @@ Especialista em desenvolvimento backend e integração de sistemas com mais de 1
 
 ---
 
-## 🎯 Sobre Mim
+## 🎯 Sobre mim
 
 Possuo formação em **Engenharia Elétrica** pela UNIASSELVI e uma jornada profissional que começou com eletrônica industrial e evoluiu para desenvolvimento de software de alta complexidade.
 
@@ -70,7 +70,7 @@ Técnico especializado em eletrônica
 
 ---
 
-## 🛠️ Habilidades Técnicas
+## 🛠️ Habilidades técnicas
 
 ### Backend
 - Java
@@ -84,7 +84,7 @@ Técnico especializado em eletrônica
 - React
 - Responsive Design
 
-### Banco de Dados
+### Banco de dados
 - PostgreSQL
 - SQL
 - Database Design

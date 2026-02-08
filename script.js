@@ -10,7 +10,7 @@ const translations = {
         'hero.description': 'Especialista em desenvolvimento backend e integração de sistemas com mais de 5 anos de experiência. Apaixonado por criar soluções robustas, escaláveis e de alta qualidade.',
         'hero.contact': 'Entre em contato',
         'hero.experience': 'Veja minha experiência',
-        'about.title': 'Sobre Mim',
+        'about.title': 'Sobre mim',
         'about.paragraph1': 'Sou um desenvolvedor de software sênior com formação em Engenharia Elétrica pela UNIASSELVI. Minha jornada começou com eletrônica industrial e evoluiu para desenvolvimento de software de alta complexidade.',
         'about.paragraph2': 'Atualmente atuo como Product Owner e Technical Lead em sistemas de qualidade, onde coordeno desenvolvimento de soluções complexas, integração de sistemas e otimização de processos.',
         'about.paragraph3': 'Sou defensor de código limpo, testes automatizados e boas práticas de engenharia de software. Gosto de trabalhar em equipes colaborativas e sempre busco aprender novas tecnologias.',
@@ -22,6 +22,8 @@ const translations = {
         'about.yearsExperience': 'Anos de experiência',
         'about.projectsCompleted': 'Projetos concluídos',
         'about.languages': 'Linguagens',
+        'about.formation': 'Formação',
+        'about.formationDetail': 'Engenharia Elétrica',
         'experience.title': 'Experiência profissional',
         'experience.weg.role': 'Senior Software Developer',
         'experience.weg.period': 'jun 2023 - Presente • 2 anos 9 meses',
@@ -39,15 +41,15 @@ const translations = {
         'experience.zenvia.resp1': 'Desenvolvimento de assistentes virtuais (chatbots)',
         'experience.zenvia.resp2': 'Desenvolvimento de APIs REST',
         'experience.zenvia.resp3': 'Testes unitários de APIs com Jest.js',
-        'experience.hdj.role': 'Fitter - Técnico em Eletrônica',
+        'experience.hdj.role': 'Montador eletro-eletrônico',
         'experience.hdj.period': 'out 2013 - set 2021 • 8 anos',
         'experience.hdj.location': '📍 Presencial - Blumenau, Santa Catarina',
         'experience.hdj.resp1': 'Montagem e manutenção de placas eletrônicas',
         'experience.hdj.resp2': 'Soldagem de componentes eletrônicos',
-        'skills.title': 'Habilidades Técnicas',
+        'skills.title': 'Habilidades técnicas',
         'skills.backend': 'Backend',
         'skills.frontend': 'Frontend',
-        'skills.database': 'Banco de Dados',
+        'skills.database': 'Banco de dados',
         'skills.tools': 'Ferramentas & DevOps',
         'skills.testing': 'Testing & QA',
         'skills.specialized': 'Especializado',
@@ -69,8 +71,8 @@ const translations = {
         'hero.description': 'Backend development specialist and systems integration expert with over 10 years of experience. Passionate about creating robust, scalable, and high-quality solutions.',
         'hero.contact': 'Get in touch',
         'hero.experience': 'See my experience',
-        'about.title': 'About Me',
-        'about.paragraph1': 'I\'m a senior software developer with a degree in Electrical Engineering from UNIASSELVI. My journey started with industrial electronics and evolved into high-complexity software development.',
+        'about.title': 'About me',
+        'about.paragraph1': 'I\'m a senior software developer with a degree in Electrical engineering from UNIASSELVI. My journey started with industrial electronics and evolved into high-complexity software development.',
         'about.paragraph2': 'Currently, I work as a Product Owner and Technical Lead in quality systems, coordinating the development of complex solutions, systems integration, and process optimization.',
         'about.paragraph3': 'I\'m an advocate for clean code, automated testing, and software engineering best practices. I enjoy working in collaborative teams and always seek to learn new technologies.',
         'about.languages': '🌍 Languages',
@@ -80,6 +82,8 @@ const translations = {
         'about.intermediate': 'Intermediate',
         'about.yearsExperience': 'Years of Experience',
         'about.projectsCompleted': 'Projects Completed',
+        'about.formation': 'Education',
+        'about.formationDetail': 'Electrical engineering',
         'about.languages': 'Languages',
         'experience.title': 'Professional Experience',
         'experience.weg.role': 'Senior Software Developer',
@@ -98,7 +102,7 @@ const translations = {
         'experience.zenvia.resp1': 'Development of virtual assistants (chatbots)',
         'experience.zenvia.resp2': 'Development of REST APIs',
         'experience.zenvia.resp3': 'Unit testing of APIs with Jest.js',
-        'experience.hdj.role': 'Fitter - Electronics Technician',
+        'experience.hdj.role': 'Electronics Fitter',
         'experience.hdj.period': 'Oct 2013 - Sep 2021 • 8 years',
         'experience.hdj.location': '📍 On-Site - Blumenau, Santa Catarina',
         'experience.hdj.resp1': 'Assembly and maintenance of electronic boards',
@@ -128,8 +132,8 @@ const translations = {
         'hero.description': 'Especialista en desarrollo backend e integración de sistemas con más de 10 años de experiencia. Apasionado por crear soluciones robustas, escalables y de alta calidad.',
         'hero.contact': 'Ponte en contacto',
         'hero.experience': 'Ver mi experiencia',
-        'about.title': 'Acerca de Mí',
-        'about.paragraph1': 'Soy un desarrollador de software senior con formación en Ingeniería Eléctrica por UNIASSELVI. Mi carrera comenzó con electrónica industrial y evolucionó hacia el desarrollo de software de alta complejidad.',
+        'about.title': 'Acerca de mí',
+        'about.paragraph1': 'Soy un desarrollador de software senior con formación en Ingeniería eléctrica por UNIASSELVI. Mi carrera comenzó con electrónica industrial y evolucionó hacia el desarrollo de software de alta complejidad.',
         'about.paragraph2': 'Actualmente trabajo como Product Owner y Technical Lead en sistemas de calidad, coordinando el desarrollo de soluciones complejas, integración de sistemas y optimización de procesos.',
         'about.paragraph3': 'Soy defensor del código limpio, pruebas automatizadas y mejores prácticas de ingeniería de software. Me gusta trabajar en equipos colaborativos y siempre busco aprender nuevas tecnologías.',
         'about.languages': '🌍 Idiomas',
@@ -138,6 +142,8 @@ const translations = {
         'about.fluent': 'Fluido',
         'about.intermediate': 'Intermedio',
         'about.yearsExperience': 'Años de Experiencia',
+        'about.formation': 'Formación',
+        'about.formationDetail': 'Ingeniería eléctrica',
         'about.projectsCompleted': 'Proyectos Completados',
         'about.languages': 'Lenguajes',
         'experience.title': 'Experiencia Profesional',
@@ -157,15 +163,15 @@ const translations = {
         'experience.zenvia.resp1': 'Desarrollo de asistentes virtuales (chatbots)',
         'experience.zenvia.resp2': 'Desarrollo de APIs REST',
         'experience.zenvia.resp3': 'Pruebas unitarias de APIs con Jest.js',
-        'experience.hdj.role': 'Montador - Técnico de Electrónica',
+        'experience.hdj.role': 'Montador electrónico',
         'experience.hdj.period': 'oct 2013 - sep 2021 • 8 años',
         'experience.hdj.location': '📍 Presencial - Blumenau, Santa Catarina',
         'experience.hdj.resp1': 'Montaje y mantenimiento de placas electrónicas',
         'experience.hdj.resp2': 'Soldadura de componentes electrónicos',
-        'skills.title': 'Habilidades Técnicas',
+        'skills.title': 'Habilidades técnicas',
         'skills.backend': 'Backend',
         'skills.frontend': 'Frontend',
-        'skills.database': 'Base de Datos',
+        'skills.database': 'Base de datos',
         'skills.tools': 'Herramientas y DevOps',
         'skills.testing': 'Pruebas y QA',
         'skills.specialized': 'Especializado',
@@ -247,15 +253,15 @@ function setupLanguageButtons() {
 function calculateExperienceDuration(startDateStr, endDateStr) {
     const startDate = new Date(startDateStr + '-01');
     const endDate = endDateStr === 'present' ? new Date() : new Date(endDateStr + '-01');
-    
+
     let years = endDate.getFullYear() - startDate.getFullYear();
     let months = endDate.getMonth() - startDate.getMonth();
-    
+
     if (months < 0) {
         years--;
         months += 12;
     }
-    
+
     const lang = currentLanguage || 'pt';
     const formatDuration = (y, m) => {
         if (lang === 'pt') {
@@ -272,7 +278,7 @@ function calculateExperienceDuration(startDateStr, endDateStr) {
             return `${y} ${y === 1 ? 'año' : 'años'} ${m} ${m === 1 ? 'mes' : 'meses'}`;
         }
     };
-    
+
     return formatDuration(years, months);
 }
 
@@ -285,7 +291,7 @@ function updateExperiencePeriods() {
         const duration = calculateExperienceDuration(startDate, endDate);
         const lang = currentLanguage || 'pt';
         const locale = lang === 'pt' ? 'pt-BR' : lang === 'en' ? 'en-US' : 'es-ES';
-        
+
         const startMonth = new Date(startDate + '-01').toLocaleDateString(locale, { month: 'short', year: 'numeric' });
         let endMonth;
         if (endDate === 'present') {
@@ -293,7 +299,7 @@ function updateExperiencePeriods() {
         } else {
             endMonth = new Date(endDate + '-01').toLocaleDateString(locale, { month: 'short', year: 'numeric' });
         }
-        
+
         element.textContent = `${startMonth} - ${endMonth} • ${duration}`;
     });
 }
@@ -303,7 +309,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeTheme();
     setLanguage(currentLanguage);
     setupLanguageButtons();
-    
+
     // Update experience periods
     updateExperiencePeriods();
 
