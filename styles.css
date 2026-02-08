@@ -79,6 +79,13 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
 }
 
 
@@ -1082,20 +1089,30 @@ footer {
     }
     .cta-buttons {
         flex-direction: column;
+        width: 100%;
     }
     .cta-buttons .btn {
         width: 100%;
         text-align: center;
-        padding: 0.75rem 1.5rem;
+        padding: 0.75rem 1rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     .skills-grid {
         grid-template-columns: 1fr;
     }
     .contact-links {
         flex-direction: column;
+        width: 100%;
+        padding: 0 0.5rem;
     }
     .contact-btn {
         width: 100%;
+        padding: 1rem 1.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     .hero-visual {
         min-height: 250px;
@@ -1103,17 +1120,23 @@ footer {
     .code-block {
         max-width: 100%;
     }
+    .code-block {
+        width: calc(100% - 0.5rem);
+        margin: 0 auto;
+    }
     .code-block pre {
-        font-size: 0.8rem;
-        padding: 1rem;
-        line-height: 1.4;
+        font-size: 0.75rem;
+        padding: 0.75rem;
+        line-height: 1.3;
+        overflow-x: auto;
+        overflow-y: hidden;
     }
     .code-header {
-        padding: 0.75rem;
+        padding: 0.5rem;
     }
     .code-header span {
-        width: 10px;
-        height: 10px;
+        width: 8px;
+        height: 8px;
     }
     .about-content {
         grid-template-columns: 1fr;
@@ -1177,21 +1200,32 @@ footer {
     h2 {
         font-size: 1.5rem!important;
     }
+    .hero-visual {
+        min-height: 180px;
+    }
     .cta-buttons .btn {
-        padding: 0.65rem 1.2rem;
-        font-size: 0.95rem;
+        padding: 0.6rem 0.9rem;
+        font-size: 0.9rem;
+    }
+    .code-block {
+        width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
     }
     .code-block pre {
-        font-size: 0.7rem;
-        padding: 0.75rem;
-        line-height: 1.3;
+        font-size: 0.65rem;
+        padding: 0.5rem;
+        line-height: 1.2;
+        overflow-x: auto;
+        overflow-y: hidden;
+        word-break: break-word;
     }
     .code-header {
-        padding: 0.5rem;
+        padding: 0.4rem;
     }
     .code-header span {
-        width: 8px;
-        height: 8px;
+        width: 7px;
+        height: 7px;
     }
     .card-header {
         flex-direction: column;
@@ -1202,8 +1236,9 @@ footer {
     }
     .timeline-item:nth-child(odd) .experience-card,
     .timeline-item:nth-child(even) .experience-card {
-        width: calc(100% - 30px);
-        margin-left: 30px!important;
+        width: calc(100% - 40px);
+        margin-left: 40px!important;
+        margin-right: 0!important;
     }
     .experience-card {
         padding: 1rem;
@@ -1227,10 +1262,18 @@ footer {
     .contact-subtitle {
         font-size: 1rem;
     }
+    .contact-links {
+        width: 100%;
+        padding: 0 0.5rem;
+    }
     .contact-btn {
-        padding: 0.75rem 1rem;
-        font-size: 0.95rem;
+        padding: 0.7rem 0.9rem;
+        font-size: 0.9rem;
         min-width: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
     }
 }
 
