@@ -163,39 +163,6 @@ html[data-theme="light"] .navbar {
 }
 
 
-/* Language Switcher */
-
-.language-switcher {
-    display: flex;
-    gap: 0.5rem;
-    background: var(--bg-secondary);
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    border: 1px solid var(--border-color);
-}
-
-.lang-btn {
-    padding: 0.35rem 0.75rem;
-    background: transparent;
-    color: var(--text-secondary);
-    border: none;
-    border-radius: 0.35rem;
-    cursor: pointer;
-    font-size: 0.85rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.lang-btn.active {
-    background: var(--primary-color);
-    color: white;
-}
-
-.lang-btn:hover {
-    color: var(--primary-color);
-}
-
-
 /* Theme Toggle */
 
 .theme-language-container {
@@ -232,6 +199,40 @@ html[data-theme="light"] .navbar {
 
 .theme-toggle:hover .theme-icon {
     transform: rotate(20deg);
+}
+
+
+/* Language Switcher */
+
+.language-switcher {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    padding: 0.4rem 0.7rem;
+    border-radius: 0.35rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.lang-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.lang-btn.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
 }
 
 
@@ -455,6 +456,35 @@ html[data-theme="light"] .code-block code {
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
     line-height: 1.8;
+}
+
+.languages-section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.languages-section h4 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.languages-list {
+    list-style: none;
+    padding: 0;
+}
+
+.languages-list li {
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    padding-left: 0;
+}
+
+.languages-list li strong {
+    color: var(--text-primary);
 }
 
 .about-stats {
@@ -990,10 +1020,7 @@ footer {
         height: 35px;
         font-size: 1.1rem;
     }
-    .lang-btn {
-        padding: 0.25rem 0.5rem;
-        font-size: 0.7rem;
-    }
+
     h2 {
         font-size: 1.5rem!important;
     }
