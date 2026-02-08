@@ -1065,7 +1065,7 @@ footer {
         align-items: center;
     }
     .hero {
-        padding-top: 80px;
+        padding-top: 120px;
         padding-bottom: 40px;
     }
     .hero-content {
@@ -1145,6 +1145,9 @@ footer {
     }
     .navbar-content {
         padding: 0.5rem 0;
+    }
+    .hero {
+        padding-top: 130px;
     }
     .hero-text h1 {
         font-size: 1.5rem;
