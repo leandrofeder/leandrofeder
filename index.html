@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio - Desenvolvedor de Software Sênior">
+    <meta name="theme-color" content="#0f172a">
+    <title data-i18n="title">Portfólio - Leandro Feder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23007bff'>L</text></svg>">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="#home" class="logo">
+                    <span>LF</span>
+                </a>
+                <nav class="nav-links">
+                    <a href="#about" data-i18n="nav.about">Sobre</a>
+                    <a href="#experience" data-i18n="nav.experience">Experiência</a>
+                    <a href="#skills" data-i18n="nav.skills">Habilidades</a>
+                    <a href="#contact" data-i18n="nav.contact">Contato</a>
+                </nav>
+                <div class="theme-language-container">
+                    <button class="theme-toggle" id="theme-toggle" title="Toggle theme">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="pt-BR">PT</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                        <button class="lang-btn" data-lang="es">ES</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 data-i18n="hero.greeting">Olá! Sou Leandro Feder</h1>
+                        <p class="subtitle" data-i18n="hero.title">Desenvolvedor de Software Sênior</p>
+                        <p class="description" data-i18n="hero.description">
+                            Especialista em desenvolvimento backend e integração de sistemas com mais de 10 anos de experiência. Apaixonado por criar soluções robustas, escaláveis e de alta qualidade.
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="#contact" class="btn btn-primary" data-i18n="hero.cta">Entre em contato</a>
+                            <a href="#experience" class="btn btn-secondary" data-i18n="hero.cta2">Veja minha experiência</a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <pre><code>const developer = {
+  name: 'Leandro Feder',
+  role: 'Senior Developer',
+  skills: ['Java', 'Node.js', 'PostgreSQL'],
+  passion: 'Clean Code & Innovation'
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 data-i18n="about.title">Sobre Mim</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p data-i18n="about.text1">
+                            Sou um desenvolvedor de software sênior com formação em Engenharia Elétrica pela UNIASSELVI. Minha jornada começou com eletrônica industrial e evoluiu para desenvolvimento de software de alta complexidade.
+                        </p>
+                        <p data-i18n="about.text2">
+                            Atualmente atuo como Product Owner e Technical Lead em sistemas de qualidade, onde coordeno desenvolvimento de soluções complexas, integração de sistemas e otimização de processos.
+                        </p>
+                        <p data-i18n="about.text3">
+                            Sou defensor de código limpo, testes automatizados e boas práticas de engenharia de software. Gosto de trabalhar em equipes colaborativas e sempre busco aprender novas tecnologias.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">10+</div>
+                            <p data-i18n="about.stat1">Anos de Experiência</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">20+</div>
+                            <p data-i18n="about.stat2">Projetos Concluídos</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">5+</div>
+                            <p data-i18n="about.stat3">Linguagens</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2 data-i18n="experience.title">Experiência Profissional</h2>
+                <div class="timeline">
+                    <!-- WEG -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="experience-card">
+                            <div class="card-header">
+                                <h3 data-i18n="exp.weg.title">Senior Software Developer</h3>
+                                <span class="company-badge">WEG</span>
+                            </div>
+                            <p class="period" data-i18n="exp.weg.period">jun 2023 - Presente • 2 anos 9 meses</p>
+                            <p class="location">Blumenau, Santa Catarina</p>
+                            <div class="responsibilities">
+                                <p data-i18n="exp.weg.lead">Product Owner e Technical Lead do Time de Sistemas de Qualidade</p>
+                                <ul>
+                                    <li data-i18n="exp.weg.r1">Desenvolvimento e suporte de sistemas para testes de transformadores</li>
+                                    <li data-i18n="exp.weg.r2">Integração entre sistemas de laboratório e corporativos</li>
+                                    <li data-i18n="exp.weg.r3">Comunicação entre sistemas de testes e equipamentos de medição</li>
+                                    <li data-i18n="exp.weg.r4">Desenvolvimento em Java, JavaScript e LabVIEW</li>
+                                    <li data-i18n="exp.weg.r5">Gestão e otimização de desempenho de banco de dados PostgreSQL</li>
+                                    <li data-i18n="exp.weg.r6">Automação de sistemas para aumentar eficiência e confiabilidade</li>
+                                </ul>
+                            </div>
+                            <div class="tech-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">LabVIEW</span>
+                                <span class="tag">Backend</span>
+                                <span class="tag">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ZENVIA -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="experience-card">
+                            <div class="card-header">
+                                <h3 data-i18n="exp.zenvia.title">Operations Developer</h3>
+                                <span class="company-badge">ZENVIA</span>
+                            </div>
+                            <p class="period" data-i18n="exp.zenvia.period">abr 2022 - jun 2023 • 1 ano 3 meses</p>
+                            <p class="location" data-i18n="exp.zenvia.location">Remoto</p>
+                            <div class="responsibilities">
+                                <ul>
+                                    <li data-i18n="exp.zenvia.r1">Desenvolvimento de assistentes virtuais (chatbots)</li>
+                                    <li data-i18n="exp.zenvia.r2">Desenvolvimento de APIs REST</li>
+                                    <li data-i18n="exp.zenvia.r3">Testes unitários de APIs com Jest.js</li>
+                                </ul>
+                            </div>
+                            <div class="tech-tags">
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Jest</span>
+                                <span class="tag">REST API</span>
+                                <span class="tag">Chatbots</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HDJ -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="experience-card">
+                            <div class="card-header">
+                                <h3 data-i18n="exp.hdj.title">Fitter - Técnico em Eletrônica</h3>
+                                <span class="company-badge">HDJ</span>
+                            </div>
+                            <p class="period" data-i18n="exp.hdj.period">out 2013 - set 2021 • 8 anos</p>
+                            <p class="location">Blumenau, Santa Catarina</p>
+                            <div class="responsibilities">
+                                <ul>
+                                    <li data-i18n="exp.hdj.r1">Montagem e manutenção de placas eletrônicas</li>
+                                    <li data-i18n="exp.hdj.r2">Soldagem de componentes eletrônicos</li>
+                                </ul>
+                            </div>
+                            <div class="tech-tags">
+                                <span class="tag" data-i18n="exp.hdj.tag1">Eletrônica</span>
+                                <span class="tag" data-i18n="exp.hdj.tag2">Soldagem</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 data-i18n="skills.title">Habilidades Técnicas</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 data-i18n="skills.backend">Backend</h3>
+                        <div class="skill-items">
+                            <span class="skill-badge">Java</span>
+                            <span class="skill-badge">Node.js</span>
+                            <span class="skill-badge">REST API</span>
+                            <span class="skill-badge">Microservices</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 data-i18n="skills.frontend">Frontend</h3>
+                        <div class="skill-items">
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">HTML/CSS</span>
+                            <span class="skill-badge">React</span>
+                            <span class="skill-badge">Responsive Design</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 data-i18n="skills.database">Banco de Dados</h3>
+                        <div class="skill-items">
+                            <span class="skill-badge">PostgreSQL</span>
+                            <span class="skill-badge">SQL</span>
+                            <span class="skill-badge">Database Design</span>
+                            <span class="skill-badge">Query Optimization</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 data-i18n="skills.tools">Ferramentas & DevOps</h3>
+                        <div class="skill-items">
+                            <span class="skill-badge">Git</span>
+                            <span class="skill-badge">Docker</span>
+                            <span class="skill-badge">CI/CD</span>
+                            <span class="skill-badge">Linux</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 data-i18n="skills.testing">Testing & QA</h3>
+                        <div class="skill-items">
+                            <span class="skill-badge">Jest</span>
+                            <span class="skill-badge">Unit Testing</span>
+                            <span class="skill-badge">Integration Testing</span>
+                            <span class="skill-badge">Test Automation</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 data-i18n="skills.specialized">Especializado</h3>
+                        <div class="skill-items">
+                            <span class="skill-badge">LabVIEW</span>
+                            <span class="skill-badge">System Integration</span>
+                            <span class="skill-badge">Equipment Communication</span>
+                            <span class="skill-badge">Chatbots</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 data-i18n="contact.title">Vamos Conversar?</h2>
+                <p class="contact-subtitle" data-i18n="contact.subtitle">
+                    Estou aberto a novas oportunidades, projetos interessantes e colaborações. Entre em contato via LinkedIn ou GitHub.
+                </p>
+                <div class="contact-links">
+                    <a href="https://linkedin.com/in/leandrofeder" class="contact-btn" target="_blank" rel="noopener">
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/leandrofeder" class="contact-btn" target="_blank" rel="noopener">
+                        <span>GitHub</span>
+                    </a>
+                    <a href="mailto:leandro@example.com" class="contact-btn" target="_blank" rel="noopener">
+                        <span data-i18n="contact.email">Email</span>
+                    </a>
+                </div>
+                <p class="contact-note" data-i18n="contact.note">
+                    Atualize os links acima com seus perfis reais
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-i18n="footer">
+                © 2024 Leandro Feder. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
