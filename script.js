@@ -307,13 +307,41 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Mobile menu toggle (if you add a hamburger menu later)
-const isMobile = window.innerWidth < 768;
+// Mobile Menu Toggle
+const hamburgerMenu = document.getElementById('hamburger-menu');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+const closeMenuBtn = document.getElementById('close-menu');
+const mobileMenuLinks = document.querySelectorAll('.mobile-menu-links a');
 
-// Handle resize
-window.addEventListener('resize', function() {
-    const nowMobile = window.innerWidth < 768;
-    if (nowMobile !== isMobile) {
-        location.reload(); // Simple refresh on size change
-    }
+// Open menu
+hamburgerMenu.addEventListener('click', function() {
+    hamburgerMenu.classList.add('active');
+    mobileMenu.classList.add('active');
+    mobileMenuOverlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
 });
+
+// Close menu function
+function closeMenu() {
+    hamburgerMenu.classList.remove('active');
+    mobileMenu.classList.remove('active');
+    mobileMenuOverlay.classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
+// Close menu button
+closeMenuBtn.addEventListener('click', closeMenu);
+
+// Close menu on overlay click
+mobileMenuOverlay.addEventListener('click', closeMenu);
+
+// Close menu when a link is clicked
+mobileMenuLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+});
+
+// Close menu on resize if window gets bigger
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 768) {
+        closeMenu();

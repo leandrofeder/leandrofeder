@@ -34,9 +34,38 @@
                         <span class="theme-icon">🌙</span>
                     </button>
                 </div>
+                <button class="hamburger-menu" id="hamburger-menu" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>
+
+    <!-- Mobile Sidebar Menu -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+    <nav class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <a href="#home" class="logo">
+                <span>LF</span>
+            </a>
+            <button class="close-menu" id="close-menu" aria-label="Fechar menu">×</button>
+        </div>
+        <div class="mobile-menu-links">
+            <a href="#about" data-i18n="nav.about">Sobre</a>
+            <a href="#experience" data-i18n="nav.experience">Experiência</a>
+            <a href="#skills" data-i18n="nav.skills">Habilidades</a>
+            <a href="#contact" data-i18n="nav.contact">Contato</a>
+        </div>
+        <div class="mobile-menu-footer">
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="pt">PT</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="es">ES</button>
+            </div>
+        </div>
+    </nav>
 
     <main>
         <!-- Hero Section -->
