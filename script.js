@@ -7,7 +7,7 @@ const translations = {
         'nav.contact': 'Contato',
         'hero.greeting': 'Olá! Sou Leandro Feder',
         'hero.subtitle': 'Desenvolvedor de Software Sênior',
-        'hero.description': 'Especialista em desenvolvimento backend e integração de sistemas com mais de 10 anos de experiência. Apaixonado por criar soluções robustas, escaláveis e de alta qualidade.',
+        'hero.description': 'Especialista em desenvolvimento backend e integração de sistemas com mais de 5 anos de experiência. Apaixonado por criar soluções robustas, escaláveis e de alta qualidade.',
         'hero.contact': 'Entre em contato',
         'hero.experience': 'Veja minha experiência',
         'about.title': 'Sobre Mim',
@@ -19,14 +19,14 @@ const translations = {
         'about.english': 'Inglês',
         'about.fluent': 'Fluente',
         'about.intermediate': 'Intermediário',
-        'about.yearsExperience': 'Anos de Experiência',
-        'about.projectsCompleted': 'Projetos Concluídos',
+        'about.yearsExperience': 'Anos de experiência',
+        'about.projectsCompleted': 'Projetos concluídos',
         'about.languages': 'Linguagens',
-        'experience.title': 'Experiência Profissional',
+        'experience.title': 'Experiência profissional',
         'experience.weg.role': 'Senior Software Developer',
         'experience.weg.period': 'jun 2023 - Presente • 2 anos 9 meses',
         'experience.weg.location': '📍 Presencial - Blumenau, Santa Catarina',
-        'experience.weg.title': 'Product Owner e Technical Lead do Time de Sistemas de Qualidade',
+        'experience.weg.title': 'Product Owner e Technical Lead do time de sistemas de qualidade',
         'experience.weg.resp1': 'Desenvolvimento e suporte de sistemas para testes de transformadores',
         'experience.weg.resp2': 'Integração entre sistemas de laboratório e corporativos',
         'experience.weg.resp3': 'Comunicação entre sistemas de testes e equipamentos de medição',
@@ -51,13 +51,13 @@ const translations = {
         'skills.tools': 'Ferramentas & DevOps',
         'skills.testing': 'Testing & QA',
         'skills.specialized': 'Especializado',
-        'contact.title': 'Vamos Conversar?',
+        'contact.title': 'Vamos conversar?',
         'contact.subtitle': 'Estou aberto a novas oportunidades, projetos interessantes e colaborações. Entre em contato via LinkedIn ou GitHub.',
         'contact.linkedin': 'LinkedIn',
         'contact.github': 'GitHub',
         'contact.email': 'Email',
         'contact.note': 'Atualize os links acima com seus perfis reais',
-        'footer.copyright': '© 2024 Leandro Feder. Todos os direitos reservados.'
+        'footer.copyright': '© 2026 Leandro Feder. Todos os direitos reservados.'
     },
     en: {
         'nav.about': 'About',
@@ -110,13 +110,13 @@ const translations = {
         'skills.tools': 'Tools & DevOps',
         'skills.testing': 'Testing & QA',
         'skills.specialized': 'Specialized',
-        'contact.title': 'Let\'s Talk?',
+        'contact.title': 'Let\'s talk?',
         'contact.subtitle': 'I\'m open to new opportunities, interesting projects, and collaborations. Get in touch via LinkedIn or GitHub.',
         'contact.linkedin': 'LinkedIn',
         'contact.github': 'GitHub',
         'contact.email': 'Email',
         'contact.note': 'Update the links above with your actual profiles',
-        'footer.copyright': '© 2024 Leandro Feder. All rights reserved.'
+        'footer.copyright': '© 2026 Leandro Feder. All rights reserved.'
     },
     es: {
         'nav.about': 'Acerca de',
@@ -175,7 +175,7 @@ const translations = {
         'contact.github': 'GitHub',
         'contact.email': 'Correo Electrónico',
         'contact.note': 'Actualiza los enlaces anteriores con tus perfiles reales',
-        'footer.copyright': '© 2024 Leandro Feder. Todos los derechos reservados.'
+        'footer.copyright': '© 2026 Leandro Feder. Todos los derechos reservados.'
     }
 };
 
@@ -228,6 +228,9 @@ function setLanguage(lang) {
             element.textContent = translations[lang][key];
         }
     });
+
+    // Update experience periods with new language
+    updateExperiencePeriods();
 }
 
 function setupLanguageButtons() {
@@ -239,11 +242,61 @@ function setupLanguageButtons() {
     });
 }
 
+// Calculate experience duration
+function calculateExperienceDuration(startDateStr, endDateStr) {
+    const startDate = new Date(startDateStr + '-01');
+    const endDate = endDateStr === 'present' ? new Date() : new Date(endDateStr + '-01');
+    
+    let years = endDate.getFullYear() - startDate.getFullYear();
+    let months = endDate.getMonth() - startDate.getMonth();
+    
+    if (months < 0) {
+        years--;
+        months += 12;
+    }
+    
+    const currentLang = document.documentElement.getAttribute('data-language') || 'pt';
+    const formatDuration = (y, m) => {
+        if (currentLang === 'pt') {
+            if (y === 0) return m === 1 ? `${m} mês` : `${m} meses`;
+            if (m === 0) return y === 1 ? `${y} ano` : `${y} anos`;
+            return `${y} ${y === 1 ? 'ano' : 'anos'} ${m} ${m === 1 ? 'mês' : 'meses'}`;
+        } else if (currentLang === 'en') {
+            if (y === 0) return m === 1 ? `${m} month` : `${m} months`;
+            if (m === 0) return y === 1 ? `${y} year` : `${y} years`;
+            return `${y} ${y === 1 ? 'year' : 'years'} ${m} ${m === 1 ? 'month' : 'months'}`;
+        } else if (currentLang === 'es') {
+            if (y === 0) return m === 1 ? `${m} mes` : `${m} meses`;
+            if (m === 0) return y === 1 ? `${y} año` : `${y} años`;
+            return `${y} ${y === 1 ? 'año' : 'años'} ${m} ${m === 1 ? 'mes' : 'meses'}`;
+        }
+    };
+    
+    return formatDuration(years, months);
+}
+
+// Update all experience periods
+function updateExperiencePeriods() {
+    const periodElements = document.querySelectorAll('.period[data-start][data-end]');
+    periodElements.forEach(element => {
+        const startDate = element.getAttribute('data-start');
+        const endDate = element.getAttribute('data-end');
+        const duration = calculateExperienceDuration(startDate, endDate);
+        const startMonth = new Date(startDate + '-01').toLocaleDateString(document.documentElement.getAttribute('data-language') || 'pt-BR', { month: 'short', year: 'numeric' });
+        const endMonth = endDate === 'present' ? (document.documentElement.getAttribute('data-language') === 'en' ? 'Present' : document.documentElement.getAttribute('data-language') === 'es' ? 'Presente' : 'Presente') : new Date(endDate + '-01').toLocaleDateString(document.documentElement.getAttribute('data-language') || 'pt-BR', { month: 'short', year: 'numeric' });
+        
+        element.textContent = `${startMonth} - ${endMonth} • ${duration}`;
+    });
+}
+
 // Initialize
 document.addEventListener('DOMContentLoaded', function() {
     initializeTheme();
     setLanguage(currentLanguage);
     setupLanguageButtons();
+    
+    // Update experience periods
+    updateExperiencePeriods();
 
     const themeToggle = document.getElementById('theme-toggle');
     if (themeToggle) {
